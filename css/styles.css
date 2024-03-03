@@ -1,0 +1,62 @@
+/*Global Attributes*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Webpage Fonts*/
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+/*Header section*/
+header{
+    background-color: black;
+    color: white;
+    font-family: Poppins-Regular,monospace;
+}
+
+/*Footer Section*/
+footer{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+}
+
+/*Navigation Bar*/
+nav li{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color: blue;
+    display: block;
+    padding: 10px;
+}
+nav li a:visited{
+    color: green;
+}
+nav li:hover a{
+    color: red;
+}
+
+
+
+/*Overview Section*/
+.overview{
+    background-color: #7798ab;
+}
+
+/*Contact Information Section*/
+.contacts{
+    background-color: #F28F3B;
+}
+
+/*Testimonial Highlights Section*/
+.testimonial{
+    background-color: #7FB069;
+}
