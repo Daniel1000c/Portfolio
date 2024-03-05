@@ -12,10 +12,19 @@
 }
 
 /*Header section*/
+.container{
+    display: flex;
+    align-items: center;
+}
 header{
     background-color: black;
     color: white;
     font-family: Poppins-Regular,monospace;
+}
+.header-logo{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
 }
 
 /*Footer Section*/
