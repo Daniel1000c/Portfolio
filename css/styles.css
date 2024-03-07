@@ -4,8 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+h2{
+    font-family: RobotoCondensed-ExtraBold,sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
 
 /*Webpage Fonts*/
+@font-face {
+    font-family: RobotoCondensed-ExtraBold;
+    src: url(../fonts/RobotoCondensed-ExtraBold.ttf);
+}
 @font-face {
     font-family: Poppins-Regular;
     src: url(../fonts/Poppins-Regular.ttf);
