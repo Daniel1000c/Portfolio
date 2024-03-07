@@ -47,9 +47,10 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
+    justify-content: right;
     margin: 0;
     padding: 0;
-    margin-left: 650px;
+    width: 80%;
 }
 nav li{
     margin-right: 10px;
