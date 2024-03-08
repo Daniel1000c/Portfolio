@@ -159,17 +159,16 @@ nav li:hover a {
 /*Overview Section*/
 .overview {
   background-color: #7798ab;
+  overflow: hidden;
 }
 .creator-image{
   float: left;
   max-width: 350px;
   margin-right: 20px;
 }
-/*
 .overview-container{
-  Needs attention: try to fit content into container that stays inside overview section.
+  margin: 5% 5% 10% 5%;
 }
-*/
 
 /*Contact Information Section*/
 .contacts {
