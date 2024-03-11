@@ -33,7 +33,7 @@ p{
 }
 .image-format{
   max-width: 350px;
-  right: 20px;
+  margin-right: 3px;
   margin-bottom: 20px;
   border-radius: 30%;
   border: 5px solid white;
@@ -206,6 +206,10 @@ nav li:hover a {
 /*Contact Information Section*/
 .contacts {
   background-color: #f28f3b;
+}
+.contacts-format{
+  float: right;
+  margin-right: 30%;
 }
 
 /*Testimonial Highlights Section*/
