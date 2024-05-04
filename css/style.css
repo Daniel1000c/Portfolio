@@ -26,9 +26,21 @@ footer{
 
 /*Section A - Index.html*/
 
+/*logo formatting*/
+.webpage_logo{
+  display: flex;
+  align-items: center; 
+  width: 35%; 
+}
+.logo-format{
+    width: 14%;
+    padding-left: 10px;
+    margin-right: 10px;
+}
 /*main menu formatting*/
 .main-menu-container{
    text-align: right;
+   width: 65%;
 }
 .main-menu-navigation ul{
     list-style-type: none;
@@ -43,6 +55,20 @@ footer{
     border-radius: 15px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+}
+/*navigation link fade down*/
+@keyframes fade-down {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+.fade-down{
+    animation: fade-down 0.5s 0.4s backwards;
 }
 
 /*footer column formatting*/

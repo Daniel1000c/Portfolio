@@ -7,14 +7,24 @@
     </head>
     <body>
         <header>
-            <h1>Anime Oasis</h1>
 
+            <!--Place store logo next to title and make it an image map to about us page.-->
+            <div class="webpage_logo">
+                <img src="images/edited_camel.png" class="logo-format fade-down" alt="Anime Oasis Logo" usemap="#logomap">
+
+                <map name="logomap">
+                    <area shape="circle" coords="52,53,52" href="aboutUs.html" alt="Anime Oasis">
+                </map>
+                <h1 class="fade-down">Anime Oasis</h1>   
+            </div>
+            
             <!--Create navigation bar that is shifted left of page.-->
-            <div class="main-menu-container">
+            <div class="main-menu-container fade-down">
                 <nav class="main-menu-navigation">
                     <ul>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Contact Us</a></li>
+                        <li><a href="">News</a></li>
                         <li><a href="">Manga/Light Novels</a></li>
                         <li><a href="">Figures</a></li>
                         <li><a href="">Apparel</a></li>
@@ -30,6 +40,7 @@
 
         </main>
         <footer>
+
             <!--Create div container called "column row" to container columns-->
             <div class="columnRow">
 
@@ -69,5 +80,7 @@
             </div>
             
         </footer>
+
     </body>
+
 </html>
