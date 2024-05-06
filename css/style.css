@@ -100,7 +100,14 @@ footer{
     animation: fade-down 0.5s 0.4s backwards;
 }
 /*Shop card image formats*/
-
+@keyframes fadeIn {
+    from{ opacity: 0;}
+    to{opacity: 1;}
+}
+.card-hover-container{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
 .card-hover-container:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     height: 260px;
