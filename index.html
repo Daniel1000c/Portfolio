@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Anime Oasis</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="favicon/favicon.ico"> <!--Link favicon to have image on web tab.-->
     </head>
     <body>
         <header>
@@ -22,13 +23,12 @@
             <div class="main-menu-container fade-down">
                 <nav class="main-menu-navigation">
                     <ul>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">News</a></li>
                         <li><a href="">Manga/Light Novels</a></li>
                         <li><a href="">Figures</a></li>
                         <li><a href="">Apparel</a></li>
-                        <li><a href="">Video Games</a></li>
                     </ul>
                 </nav>
             </div>
@@ -37,9 +37,48 @@
             
             <!--Create image carousel with links that lead to each page on website-->
             
+            <!--Create flexgrid section that has all nav links in rectangle form and as imagemaps-->
+            <div class="card-container">
+                <div class="card-hover-container">
+                    <!--Make image into image map so that user can also click image to head to other tabs-->
+                    <img src="images/anime_wall.jpg" alt="Manga/Light Novels" class="image-card-format">
+
+                    <!--Create tab title for card that has rounded borders on top-->
+                    <div class="rectangle-container">
+                        <p class="card-Message">Manga/Light Novels</p>
+                    </div>
+                </div>
+                <div class="card-hover-container">
+                    <!--Make image into image map so that user can also click image to head to other tabs-->
+                    <img src="images/anime_figure.jpg" alt="Figures and Model kits" class="image-card-format">
+
+                    <!--Create tab title for card that has rounded borders on top-->
+                    <div class="rectangle-container">
+                        <p class="card-Message">Figure/Model Kits</p>
+                    </div>
+                </div>
+                <div class="card-hover-container">
+                    <!--Make image into image map so that user can also click image to head to other tabs-->
+                    <img src="images/anime_clothing.jpg" alt="Anime Apparel" class="image-card-format">
+
+                    <!--Create tab title for card that has rounded borders on top-->
+                    <div class="rectangle-container">
+                        <p class="card-Message">Apparel</p>
+                    </div>
+                </div>
+            </div>
+
             <!--Create email subscription section for user to submit email for newsletter-->
             <section class="newsLetter-section">
                 <h2>We're Social</h2>
+
+                <!--Create image map of github logo to send user to creator github-->
+                <div class="socials-image-container">
+                    <img src="images/github-mark.png" alt="Creator Github" class="socials-format" usemap="#githubMap">
+                    <map name="githubMap">
+                        <area target="_blank" alt="Creator Github" title="Creator Github" href="https://github.com/Daniel1000c/Portfolio" coords="71,72,65" shape="circle">
+                    </map>
+                </div>
 
                 <!--Create submission box to put email in and position btn next to it.-->
                 <div class="center-subscription">

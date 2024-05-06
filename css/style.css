@@ -9,7 +9,11 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 0 10px 0;
-    background-color: #F7E8A4;
+    background-image: linear-gradient(to right,#FFD700,#B87333);
+}
+h1{
+    font-family: Lora-SemiBoldItalic;
+    color: #26619C;
 }
 h2{
     text-align: center;
@@ -24,10 +28,20 @@ h3{
     color: #B7A6F7;
 }
 footer{
-    background-color: #F7E8A4;
+    background-image: linear-gradient(to top,#40E0D0,#26619C);
 }
 .copyright-center{
     text-align: center;
+}
+
+/*Font formatting*/
+@font-face {
+    font-family: 'Lora-SemiBoldItalic';
+    src: url(../fonts/Lora-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(../fonts/Ubuntu-Regular.ttf);
 }
 
 /*Section A - Index.html*/
@@ -47,6 +61,7 @@ footer{
 .main-menu-container{
    text-align: right;
    width: 65%;
+   margin-right: 35px;
 }
 .main-menu-navigation ul{
     list-style-type: none;
@@ -57,11 +72,19 @@ footer{
 }
 .main-menu-navigation ul li a{
     text-decoration: none;
+    padding: 10px;
+    font-family: Ubuntu-Regular;
+    transition: color 0.5s ease;
+}
+.main-menu-navigation ul li a:hover{
     border: 2px solid black;
     border-radius: 15px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(to top,#ff8c00,#008080);
+    color: white;
+    font-weight: bolder;
 }
+
 /*navigation link fade down*/
 @keyframes fade-down {
     0%{
@@ -76,7 +99,50 @@ footer{
 .fade-down{
     animation: fade-down 0.5s 0.4s backwards;
 }
+/*Shop card image formats*/
+
+.card-hover-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    height: 260px;
+}
+.card-hover-container p:hover{
+    color: darkorange;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.image-card-format{
+    display:block;
+    width: 300px;
+    height: 250px;
+    padding: 5px;
+}
+.rectangle-container{
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 15px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
+    transform: translateY(-119%);
+}
+.card-Message{
+    text-align: center;
+}
 /*Newsletter section*/
+/*github image format*/
+.socials-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-format{
+    width: 50px;
+}
 .center-subscription{
     text-align: center;
     padding: 5px;
