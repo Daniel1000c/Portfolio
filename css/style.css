@@ -54,6 +54,23 @@ footer{
 
 /*Section A - Index.html*/
 
+/*redirect arrow formatting*/
+#scroll-to-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9999;
+}
 /*logo formatting*/
 .webpage_logo{
   display: flex;
