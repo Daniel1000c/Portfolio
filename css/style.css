@@ -27,6 +27,14 @@ h3{
     padding-bottom: 3px;
     color: #B7A6F7;
 }
+h4{
+    padding: 5px;
+    margin-top: 5px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightcoral;
+    font-style: italic;
+}
 footer{
     background-image: linear-gradient(to top,#40E0D0,#26619C);
 }
@@ -98,6 +106,26 @@ footer{
 }
 .fade-down{
     animation: fade-down 0.5s 0.4s backwards;
+}
+/*Popular series image formats*/
+.multiple-series-container{
+    padding: 5px;
+}
+.image-format{
+    max-width: 110px;
+    vertical-align: middle;
+}
+.section-header{
+    text-align: left;
+    padding-bottom: 5px;
+    width: 15%;
+    border-bottom: 1px solid black;
+}
+.inline-block{ 
+    /*border: 2px solid black;*/
+    display: inline-block;
+    margin: 5px;
+    padding: 3px;
 }
 /*Shop card image formats*/
 @keyframes fadeIn {
