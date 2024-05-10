@@ -237,8 +237,24 @@ footer{
 }
 
 /*Section B - AboutUs.html*/
+.aboutLogoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/winter_anime_couple.jpg);
+}
+.statement-body-format{
+    width: 80%;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgba(211,211,211,0.8);
+}
 .span-format{
-    color: darkorange;
+    color: rgb(255, 140, 0);
     font-style: italic;
     border-bottom: 2px solid black;
 }
@@ -254,5 +270,27 @@ footer{
     width: 50%;
     margin: 5px;
     padding: 10px;
-   
+}
+.center-btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.center-btn a{
+    text-decoration: none;
+}
+.center-btn a:hover{
+    color: white;
+    transition: 0.5s ease;
+}
+.center-btn a:active{
+    background-color: lightgrey;
+}
+.btn-style{
+    border-radius: 15px;
+    margin: 5px;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: darkorange;
+    font-weight: bolder;
 }

@@ -5,6 +5,24 @@
         <title>About Us</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="favicon/favicon.ico"> <!--Link favicon to have image on web tab.-->
+        <!--Write embedded style sheet for about us title-->
+        <style>
+            .about-title{
+                background-color: rgba(0, 0, 0,0.5);
+                border-radius: 10px;
+                color: aquamarine;
+                padding: 10px;
+                font-size: 50px;
+            }
+            body{
+                background-color: darkorange;
+            }
+            main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -33,28 +51,60 @@
                 </nav>
             </div>
         </header>
+        <!--Create fixed background image that doesn't move when scrolling and also covers the whole section-->
+        <section class="aboutLogoContainer">
+            <h2 class="about-title">About Anime Oasis</h2>
+        </section>
         <main>
-            <!--Create fixed background image that doesn't move when scrolling and also covers the whole section-->
             
-            <!--Create mission statement section-->
-            <section>
-                <h2><span class="span-format">Mission Statement</span></h2>
+            <div class="statement-body-format">
+                <!--Create mission statement section-->
+                <section>
+                    <h2><span class="span-format">Mission Statement</span></h2>
 
-                <div class="center-statement">
-                    <!--Write statement that explains what is the main purpose of site to user-->
-                    <p class="statement-format">Our mission here at Anime Oasis is to give the most exciting experience that a user can have when visiting our online shop. We strive for excellent customer service and shipping process for our beloved customers.Furthermore, we always strive to keep our items authenticate and never settle for bootleg products.</p>   
-                </div>
-                
-            </section>
+                    <div class="center-statement">
+                        <!--Write statement that explains what is the main purpose of site to user-->
+                        <p class="statement-format">Our mission here at Anime Oasis is to give the most exciting experience that a user can have when visiting our online shop. We strive for excellent customer service and shipping process for our beloved customers.Furthermore, we always strive to keep our items authenticate and never settle for bootleg products.</p>   
+                    </div>
+                    
+                </section>
 
-            <!--Create History section-->
-            <section>
-                <h2><span class="span-format">History</span> </h2>
-                <!--statement about the history behind this company-->
-                <div class="center-statement">
-                    <p class="statement-format">Anime Oasis started back in April 2020 when the pandemic hit. I wanted to get a place that I was able to shop to since I couldn't go outside for a couple of months.First, me and my small team started out in a warehouse where we started to go with small shipments and expanded from there. Here at Anime Oasis, we strive ourselves with excellent customer service and exceptional delivery time of your product.</p>
-                </div>
-            </section>
+                <!--Create History section-->
+                <section>
+                    <h2><span class="span-format">History</span> </h2>
+                    <!--Create statement about the history behind this company-->
+                    <div class="center-statement">
+                        <p class="statement-format">Anime Oasis started back in April 2020 when the pandemic hit. I wanted to get a place that I was able to shop to since I couldn't go outside for a couple of months.First, me and my small team started out in a warehouse where we started to go with small shipments and expanded from there. Here at Anime Oasis, we strive ourselves with excellent customer service and exceptional delivery time of your product.</p>
+                    </div>
+                </section>
+
+                <!--Create vision and culture section-->
+                <section>
+                    <h2><span class="span-format">Vision and Culture</span></h2>
+                    <!--Create statement about company vision and culture-->
+                    <div class="center-statement">
+                        <p class="statement-format">Here at Anime Oasis we strive to have a peaceful company culture and helps to rely on one another when in need. Here at the Anime Oasis family try to provide a friendly and welcoming environment where all future applicants can work. We offer one hour lunch breaks and thirty minute breaks when needed. Furthermore, we make sure to comply with local wage values in our area.</p>
+                    </div>
+                </section>
+
+                <!--Create unique selling point section for company webpage-->
+                <section>
+                    <h2><span class="span-format">Why Choose Anime Oasis?</span></h2>
+                    <div class="center-statement">
+                        <p class="statement-format"> Why choose us over any other competition? Im glad you asked. Here at Anime Oasis, we pride ourselves to have rare limited-edition products that I can guarantee you that nobody else has. We spend just that little more to get the products that our customers desire. If you shop with us, We can guarantee you a shopping experience like no other.</p>
+                    </div>
+                </section>
+
+                <!--Create navigation buttons that lead back to contact page-->
+                <div class="center-btn">
+                    <!--Create button that lead to contact us-->
+                    <a href="contact.html" class="btn-style">Contact Us</a>
+                </div>                
+            </div>
+            
+
+            <!--Create redirect arrow that allows user to go back to top of screen-->
+            <div id="scroll-to-top">&#8593;</div>
         </main>
         <footer>
 
