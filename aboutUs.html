@@ -8,14 +8,22 @@
     </head>
     <body>
         <header>
-            <h1>About Us</h1>
+            <!--Place store logo next to title and make it an image map to about us page.-->
+            <div class="webpage_logo">
+                <img src="images/edited_camel.png" class="logo-format fade-down" alt="Anime Oasis Logo" usemap="#logomap">
+
+                <map name="logomap">
+                    <area shape="circle" coords="52,53,52" href="index.html" alt="Anime Oasis">
+                </map>
+                <h1>About Us</h1>
+            </div>
 
             <!--Create nav bar for about us.html-->
             <!--Create navigation bar that is shifted left of page.-->
             <div class="main-menu-container fade-down">
                 <nav class="main-menu-navigation">
                     <ul>
-                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="Index.html">Home</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="manga.html">Manga/Light Novels</a></li>
@@ -26,10 +34,37 @@
             </div>
         </header>
         <main>
+            <!--Create fixed background image that doesn't move when scrolling and also covers the whole section-->
+            
+            <!--Create mission statement section-->
+            <section>
+                <h2><span class="span-format">Mission Statement</span></h2>
 
+                <div class="center-statement">
+                    <!--Write statement that explains what is the main purpose of site to user-->
+                    <p class="statement-format">Our mission here at Anime Oasis is to give the most exciting experience that a user can have when visiting our online shop. We strive for excellent customer service and shipping process for our beloved customers.Furthermore, we always strive to keep our items authenticate and never settle for bootleg products.</p>   
+                </div>
+                
+            </section>
+
+            <!--Create History section-->
+            <section>
+                <h2><span class="span-format">History</span> </h2>
+                <!--statement about the history behind this company-->
+                <div class="center-statement">
+                    <p class="statement-format">Anime Oasis started back in April 2020 when the pandemic hit. I wanted to get a place that I was able to shop to since I couldn't go outside for a couple of months.First, me and my small team started out in a warehouse where we started to go with small shipments and expanded from there. Here at Anime Oasis, we strive ourselves with excellent customer service and exceptional delivery time of your product.</p>
+                </div>
+            </section>
         </main>
         <footer>
-            &copy;Copyright 2024 Broward College
+
+            <!--Center copyright message-->
+            <div class="copyright-center">
+                &copy;Copyright 2024 Anime Oasis
+            </div>
+
         </footer>
+
+        <script src="javascript/script.js"></script><!--Link to external js file-->
     </body>
 </html>

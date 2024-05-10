@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" modified="2024-05-10T13:01:47.473Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="x6IQinxlyVlxWlQizJRx" version="24.3.1" type="device">
+  <diagram name="Page-1" id="y4jpMCswpzDfNJ_uVZvc">
+    <mxGraphModel dx="2800" dy="1170" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-1" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="100" width="770" height="1890" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-2" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;whiteSpace=wrap;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-3" value="https://www.draw.io" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-4" value="Home&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt; Contact Us &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;News &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Manga/light Novels&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt; Figures &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Apparel&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry y="110" width="770" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-5" value="ANIME OASIS" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-6" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry y="170" width="770" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-9" value="Mission Statement" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="272.5" y="580" width="225" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-10" value="History&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Mission%20Statement%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22422.5%22%20y%3D%22640%22%20width%3D%22225%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="272.5" y="750" width="225" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-11" value="Values and Culture" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="272.5" y="930" width="225" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-13" value="Values and Culture" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="275" y="1090" width="225" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-14" value="Unique selling point" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="272.5" y="1250" width="225" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-15" value="Contact Information" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="275" y="1410" width="225" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-16" value="Contact Us" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="325" y="1600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-17" value="Home" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry x="327.5" y="1690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-18" value="Anime Oasis 2024 copyright" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WXVv6yTg2hWCmYmqkx-3-1">
+          <mxGeometry y="1860" width="770" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="WXVv6yTg2hWCmYmqkx-3-7" target="WXVv6yTg2hWCmYmqkx-3-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WXVv6yTg2hWCmYmqkx-3-7" value="Have company logo be fixed and have it lock when scrolling down the page. Also add like a fade gradient to make it blend in to the page more smoothly." style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="260" width="210" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

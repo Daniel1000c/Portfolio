@@ -235,3 +235,24 @@ footer{
 .column-links{
     list-style-type: none;
 }
+
+/*Section B - AboutUs.html*/
+.span-format{
+    color: darkorange;
+    font-style: italic;
+    border-bottom: 2px solid black;
+}
+.center-statement{
+   display: flex;
+   justify-content: center;
+}
+.statement-format{
+    text-align: center;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+   
+}
