@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2024-05-14T15:55:08.803Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="EOUoFqfoVBMmtoekpeYP" version="24.4.0" type="device">
+  <diagram name="Page-1" id="8aaHnx3pKervxCeWry68">
+    <mxGraphModel dx="1120" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-1" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="760" width="890" height="1660" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-2" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;whiteSpace=wrap;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-3" value="https://www.draw.io" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-4" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;HOME&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ABOUT&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;NEWS&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MANGA/LIGHT NOVELS&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;FIGURES&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;APPAREL&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=right;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry y="110" width="880" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-5" value="ANIME OASIS" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="10" y="120" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-6" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.graphics.simpleIcon;strokeColor=#999999;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry y="180" width="880" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-7" value="FAQ SECTION" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="380" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-8" value="FAQ FORMAT THAT HAS A DROPDOWN THAT REVEALS EACH ANSWER" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="350" y="670" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-9" value="CONTACTS&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="380" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-11" value="CUSTOMER FEEDBACK" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="380" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-12" value="CREATE A LINK THAT LEADS TO A FEEDBACK FORM THAT LETS THE USER SUBMIT WEBSITE FEEDBACK" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry x="350" y="1400" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-13" value="ANIME OASIS COPYRIGHT 2024" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="-QpMqiadDKVmE5mr3yvh-1">
+          <mxGeometry y="1630" width="890" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-QpMqiadDKVmE5mr3yvh-10" value="PROVIDE USE CONTACT FORM SO THAT THEY CAN SEE WHAT METHODS OF CONTACT ARE PREFERABLE TO USER. INCLUDE BUSINESS HOURS" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1760" width="180" height="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
