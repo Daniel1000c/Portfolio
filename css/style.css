@@ -294,3 +294,34 @@ footer{
     background-color: darkorange;
     font-weight: bolder;
 }
+
+/*Section C - contact.html*/
+.fixed-image-format{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/animeOasisWarehouse.jpg); 
+    position: relative;
+    overflow: hidden;
+}
+.fixed-image-format::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(211,211,211,0.5),rgba(211,211,211,0.5));
+    pointer-events: none;
+    z-index: 1;
+}
+.contact-information-format{
+    padding-top: 10px;
+}
+.list-span-format{
+    font-weight: bolder;
+}

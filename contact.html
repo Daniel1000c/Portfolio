@@ -4,6 +4,38 @@
         <meta charset="utf-8">
         <title>Contact Us</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="favicon/favicon.ico"> <!--Link favicon to have image on web tab.-->
+        <!--Create a embedded style sheet for format heading just for the contact.html page-->
+        <style>
+            h2{
+                text-align: left;
+                padding-left: 10px;
+            }
+            h5{
+                text-align: center;
+                padding-top: 10px;
+                font-style: italic;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            #contactTitle{
+                font-weight: bolder;
+                font-size: 45px;
+                font-style: italic;
+                color: darkblue;
+                z-index: 2;
+            }
+            ul{
+                padding-top: 15px;
+                padding-bottom: 10px;
+            }
+            ul li{
+                padding-left: 10px;
+                margin-top: 5px;
+            }
+            .contact-info-titleFormat{
+                border-bottom: 2px dotted black;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -34,8 +66,28 @@
             </div>
 
         </header>
-        <main>
 
+        <!--Create a section where warehouse image is a fixed image that does not move when scrolling-->
+        <div class="fixed-image-format">
+            <h2 id="contactTitle">Contact Us</h2>
+        </div>
+        <main>
+            <!--Create Contact information for user-->
+            <section class="contact-information-format">
+                <h2><span class="span-format">Contact Information</span></h2>
+
+                <!--List all forms of contact for user to contact company with-->
+                <h5><span class="contact-info-titleFormat">Anime Oasis</span></h5>
+                <ul>
+                    <li><span class="list-span-format">Address:</span> 12172 SW 52nd CT</li>
+                    <li><span class="list-span-format">Phone Number:</span> 305-527-0765</li>
+                    <li><span class="list-span-format">Fax Number:</span> 555-123-4567 </li>
+                    <li><span class="list-span-format">Business Email:</span> velezDaniel6162@gmail.com</li>
+                    <li><span class="list-span-format">Business Hours:</span> 9AM-5PM, Monday - Friday</li>
+                </ul>
+            </section>
+            <!--Create redirect arrow that allows user to go back to top of screen-->
+            <div id="scroll-to-top">&#8593;</div>
         </main>
         <footer>
 
@@ -44,5 +96,7 @@
             </div>
             
         </footer>
+
+        <script src="javascript/script.js"></script><!--Link to external js file-->
     </body>
 </html>
