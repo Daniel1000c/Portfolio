@@ -319,9 +319,25 @@ footer{
     pointer-events: none;
     z-index: 1;
 }
-.contact-information-format{
-    padding-top: 10px;
+.subsection-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.list-span-format{
-    font-weight: bolder;
+.subsection-img-format{
+    text-align: center;
+    width: 50%;
+}
+.image-subsection-format{
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+}
+.subsection-statementFormat{
+    text-align: center;
+    width: 50%;
+}
+.span-titleSubsection-format{
+    border-bottom: 2px dotted black;
+    padding-bottom: 5px;
 }

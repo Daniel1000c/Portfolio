@@ -12,6 +12,7 @@
                 padding-left: 10px;
             }
             h5{
+                font-size: medium;
                 text-align: center;
                 padding-top: 10px;
                 font-style: italic;
@@ -27,10 +28,16 @@
             ul{
                 padding-top: 15px;
                 padding-bottom: 10px;
+                list-style-type: none;
             }
             ul li{
                 padding-left: 10px;
                 margin-top: 5px;
+                font-size: larger;
+            }
+            .list-span-format{
+                font-weight: bolder;
+                text-decoration: underline;
             }
             .contact-info-titleFormat{
                 border-bottom: 2px dotted black;
@@ -72,20 +79,31 @@
             <h2 id="contactTitle">Contact Us</h2>
         </div>
         <main>
-            <!--Create Contact information for user-->
-            <section class="contact-information-format">
-                <h2><span class="span-format">Contact Information</span></h2>
+            <!--Create a contact information container that has a image and information right beside it-->
+            <div class="subsection-container">
 
-                <!--List all forms of contact for user to contact company with-->
-                <h5><span class="contact-info-titleFormat">Anime Oasis</span></h5>
-                <ul>
-                    <li><span class="list-span-format">Address:</span> 12172 SW 52nd CT</li>
-                    <li><span class="list-span-format">Phone Number:</span> 305-527-0765</li>
-                    <li><span class="list-span-format">Fax Number:</span> 555-123-4567 </li>
-                    <li><span class="list-span-format">Business Email:</span> velezDaniel6162@gmail.com</li>
-                    <li><span class="list-span-format">Business Hours:</span> 9AM-5PM, Monday - Friday</li>
-                </ul>
-            </section>
+                <!--Insert image for contact information page and align it to the left-->
+                <div class="subsection-img-format">
+                    <img src="images/contactUsLittleImg.jpg" alt="Contact Us Section" class="image-subsection-format">
+                </div>
+
+                <!--Write down contact information of company and align it to the right of the image-->
+                <div class="subsection-statementFormat">
+
+                    <h5><span class="span-titleSubsection-format">Anime Oasis</span></h5>
+
+                    <!--Create unordered list to post all company information-->
+                    <ul>
+                        <li><span class="list-span-format">Address:</span> 12172 SW 52nd CT, Cooper City, FL , 33330</li>
+                        <li><span class="list-span-format">Phone Number:</span> 305-527-0765</li>
+                        <li><span class="list-span-format">Email Address:</span> VelezDaniel616@gmail.com</li>
+                        <li><span class="list-span-format">Fax Number:</span> 555-361-2211</li>
+                        <li><span class="list-span-format">Business Hours:</span> 9AM - 5PM , Monday - Friday</li>
+                    </ul>   
+                    
+                </div>
+
+            </div>
             <!--Create redirect arrow that allows user to go back to top of screen-->
             <div id="scroll-to-top">&#8593;</div>
         </main>
