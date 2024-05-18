@@ -341,3 +341,42 @@ footer{
     border-bottom: 2px dotted black;
     padding-bottom: 5px;
 }
+.faq-subsection-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-columnRow{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.flex-column{
+    flex: 1;
+    margin: 0 10px;
+    max-width: 50%;
+    text-align: center;
+}
+.dropDown-toggle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFD580;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .dropDown-toggle:hover{
+    background-color: darkorange;
+}
+.answer-container{
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background: #f1f1f1;
+}

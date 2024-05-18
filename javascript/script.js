@@ -44,3 +44,20 @@ arrow.addEventListener("click",function(){
         behavior: "smooth"
     });
 });
+
+// Create event listener when user clicks on drop down toggle
+var coll = document.getElementsByClassName("dropDown-toggle");
+
+var i;
+
+for (i = 0; i < coll.length; i++){
+    coll[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else{
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
