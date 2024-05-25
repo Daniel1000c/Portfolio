@@ -26,6 +26,13 @@
                 font-style: italic;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
+            h6{
+                text-align: center;
+                padding: 10px;
+                font-size: larger;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: chocolate;
+            }
             #contactTitle{
                 font-weight: bolder;
                 font-size: 45px;
@@ -271,6 +278,8 @@
                 
                 <div class="formModelContent">
 
+                    <!--Create close button for page-->
+                    <span class="closeBtn">&times;</span>
                     <!--Insert title for form-->
                     <h6>Customer Inquires</h6>
 
@@ -278,6 +287,25 @@
                     <form name="inquiryForm" method="post" action="https://professorcooke.org/forms/processform.php">
 
                         <!--Create input fields for user fName, lName, user email, phone Number, subject, main message, inquiry type radio buttons-->
+
+                        <!--Prompt user for first and last name-->
+                        <label for="customerFirstName">First Name:</label> <input type="text" name="customerFirstName" id="customerFirstName" required><br>
+                        <label for="customerLastName">Last Name:</label> <input type="text" name="customerLastName" id="customerLastName" required><br>
+
+                        <!--Prompt user for email-->
+                        <label for="customerEmail">Email:</label> <input type="email" name="customerEmail" id="customerEmail" required><br>
+
+                        <!--Prompt user for phone number-->
+                        <label for="customerPhone#">Phone Number:</label> <input type="tel" name="customerPhone#" id="customerPhone#" placeholder="(xxx) xxx - xxxx" required><br>
+
+                        <!--Prompt user for subject line of text for message inquiry-->
+                        <label for="messageSubjectLine">Subject:</label> <input type="text" name="messageSubjectLine" id="messageSubjectLine" required><br>
+
+                        <!--Prompt user for main message of form when displayed-->
+                        <label for="mainMessage">Message:</label> <textarea name="mainMessage" id="mainMessage" cols="40" rows="5" placeholder="Enter message here...." required></textarea><br>
+
+                        <!--Create submit button for user to submit information when done-->
+                        <input type="submit" value="send">
                         
                     </form>      
 

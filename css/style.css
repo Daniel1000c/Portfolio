@@ -419,4 +419,16 @@ footer{
 }
 
 /*Pop Up form formatting*/
+.closeBtn{
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px;
+}
+label{
+   display: inline-block;
+   text-align: right;
+   vertical-align: top;
+   width: 180px;
+}
 
