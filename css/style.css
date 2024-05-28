@@ -419,16 +419,62 @@ footer{
 }
 
 /*Pop Up form formatting*/
+.form-statements{
+    text-align: center;
+    opacity: 0.5;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+.closeBtnContainer{
+    text-align: center;
+}
 .closeBtn{
-    font-size: 40px;
-    border: 1px solid black;
-    border-radius: 25px;
-    padding: 5px;
+    font-size: 25px;
+    border: 2px solid black;
+    background-color: lightgray;
+    border-radius: 50%;
+    padding:5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.closeBtn:hover{
+    background-color: darkgray;
+    color: white;
+}
+.closeBtn:active{
+    color: blue;
 }
 label{
+   font-family: monospace;
    display: inline-block;
-   text-align: right;
+   text-align:  right;
    vertical-align: top;
    width: 180px;
+}
+input{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px;
+    vertical-align: top;
+}
+.formSubmitBtnContainer{
+    text-align: right;
+    margin-right: 30%;
+}
+.formSubmitBtn{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+.formSubmitBtn:hover{
+    background-color: darkgray;
+    color: white;
+}
+.formSubmitBtn:active{
+    color: blue;
 }
 

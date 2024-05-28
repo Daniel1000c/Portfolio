@@ -279,9 +279,15 @@
                 <div class="formModelContent">
 
                     <!--Create close button for page-->
-                    <span class="closeBtn">&times;</span>
+                    <div class="closeBtnContainer">
+                      <span class="closeBtn">&times;</span>  
+                    </div>
+                    
                     <!--Insert title for form-->
                     <h6>Customer Inquires</h6>
+
+                    <!--Insert statement under title for user-->
+                    <p class="form-statements">Input information here to get in contact with one of our representatives.</p>
 
                     <!--Create form inputs for user to submit claim-->
                     <form name="inquiryForm" method="post" action="https://professorcooke.org/forms/processform.php">
@@ -305,7 +311,10 @@
                         <label for="mainMessage">Message:</label> <textarea name="mainMessage" id="mainMessage" cols="40" rows="5" placeholder="Enter message here...." required></textarea><br>
 
                         <!--Create submit button for user to submit information when done-->
-                        <input type="submit" value="send">
+                        <div class="formSubmitBtnContainer">
+                          <input type="submit" value="Send" class="formSubmitBtn">  
+                        </div>
+                        
                         
                     </form>      
 
