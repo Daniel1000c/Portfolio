@@ -61,3 +61,35 @@ for (i = 0; i < coll.length; i++){
         }
     });
 }
+
+// Create event listener when user clicks the separate contact us buttons to show a form for user to fill in
+document.addEventListener("DOMContentLoaded",function(){
+    
+    // get the model
+    var model = document.getElementById("generalCustomerForm");
+
+    // get the buttons that opens the model
+    var btns = document.querySelectorAll(".inquiry-btn-format");
+
+    // get the span element that closes the model
+    var span = document.getElementsByClassName("closeBtn")[0];
+
+    // when user clicks the button, open the model
+    btns.forEach(function(btn){
+        btn.onclick = function(){
+            model.style.display = "block";
+        }
+    });
+
+    // when the user clicks on the span, close the model
+    span.onclick = function(){
+        model.style.display = "none";
+    }
+
+    // when the user clicks anywhere outside of the model, close it 
+    window.onclick = function(event){
+        if (event.target == model){
+            model.style.display = "none";
+        }
+    }
+});

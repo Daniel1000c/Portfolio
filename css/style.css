@@ -419,6 +419,26 @@ footer{
 }
 
 /*Pop Up form formatting*/
+.formModel{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.formModelContent{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+}
 .form-statements{
     text-align: center;
     opacity: 0.5;
@@ -431,7 +451,7 @@ footer{
 .closeBtn{
     font-size: 25px;
     border: 2px solid black;
-    background-color: lightgray;
+    background-color: lightslategrey;
     border-radius: 50%;
     padding:5px;
     display: inline-flex;
@@ -443,32 +463,38 @@ footer{
 .closeBtn:hover{
     background-color: darkgray;
     color: white;
+    cursor: pointer;
 }
 .closeBtn:active{
     color: blue;
 }
 label{
+    font-weight: bold;
    font-family: monospace;
    display: inline-block;
    text-align:  right;
-   vertical-align: top;
+   vertical-align: middle;
    width: 180px;
 }
 input{
     border: 2px solid black;
     border-radius: 5px;
-    padding: 8px;
+    padding: 3px;
     margin: 5px;
     vertical-align: top;
 }
+.formModelContent form textarea{
+    margin-bottom: 10px;
+    width: 100%;
+}
 .formSubmitBtnContainer{
-    text-align: right;
-    margin-right: 30%;
+    text-align: center;
 }
 .formSubmitBtn{
     padding: 12px;
     border-radius: 10px;
     background-color: lightgray;
+    cursor: pointer;
 }
 .formSubmitBtn:hover{
     background-color: darkgray;
