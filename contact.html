@@ -237,7 +237,7 @@
                     <p style="opacity: 0.5; padding-bottom: 8px;">+1-800-698-9676</p>
                     
                     <!--Create button to take user to form that pop ups on page using javascript-->
-                    <button class="inquiry-btn-format">Contact Us</button>
+                    <button id = "generalCustomerBtn" class="inquiry-btn-format" >Contact Us</button>
 
                 </div>
                 
@@ -252,7 +252,7 @@
                     <p style="opacity: 0.5; padding-bottom: 8px;">+1-600-865-9468</p>
                     
                     <!--Create button to take user to form that pop ups on page using javascript-->
-                    <button class="inquiry-btn-format">Contact Us</button>
+                    <button id = "businessPartnersBtn" class="inquiry-btn-format">Contact Us</button>
 
                 </div>
                 
@@ -267,7 +267,7 @@
                      <p style="opacity: 0.5; padding-bottom: 8px;">+1-857-965-8674</p>
                     
                     <!--Create button to take user to form that pop ups on page using javascript-->
-                    <button class="inquiry-btn-format">Contact Us</button>
+                    <button id = "generalBusinessBtn" class="inquiry-btn-format">Contact Us</button>
 
                 </div>
                 
@@ -320,7 +320,103 @@
                 </div>
 
             </div>
-            
+
+            <!--Create pop up form for Business Partners-->
+            <div id="businessPartnersForm" class="formModel">
+                
+                <div class="formModelContent">
+
+                    <!--Create close button for page-->
+                    <div class="closeBtnContainer">
+                      <span class="closeBtn">&times;</span>  
+                    </div>
+                    
+                    <!--Insert title for form-->
+                    <h6>Business Partner Inquires</h6>
+
+                    <!--Insert statement under title for user-->
+                    <p class="form-statements">Input information here to get in contact with one of our representatives.</p>
+
+                    <!--Create form inputs for user to submit claim-->
+                    <form name="inquiryForm" method="post" action="https://professorcooke.org/forms/processform.php">
+
+                        <!--Create input fields for user fName, lName, user email, phone Number, subject, main message, inquiry type radio buttons-->
+
+                        <!--Prompt user for first and last name-->
+                        <label for="partnerFirstName">Partner First Name:</label> <input type="text" name="partnerFirstName" id="partnerFirstName" required><br>
+                        <label for="partnerLastName"> Partner Last Name:</label> <input type="text" name="partnerLastName" id="partnerLastName" required><br>
+
+                        <!--Prompt user for email-->
+                        <label for="partnerEmail">Email:</label> <input type="email" name="partnerEmail" id="partnerEmail" required><br>
+
+                        <!--Prompt user for phone number-->
+                        <label for="partnerPhone#">Phone Number:</label> <input type="tel" name="partnerPhone#" id="partnerPhone#" placeholder="(xxx) xxx - xxxx" required><br>
+
+                        <!--Prompt user for subject line of text for message inquiry-->
+                        <label for="messagePartnerSubjectLine">Subject:</label> <input type="text" name="messagePartnerSubjectLine" id="messagePartnerSubjectLine" required><br>
+
+                        <!--Prompt user for main message of form when displayed-->
+                        <label for="mainMessagePartner" style="text-align: left; padding: 5px;">Message:</label> <textarea name="mainMessagePartner" id="mainMessagePartner" cols="40" rows="5" placeholder="Enter message here...." required></textarea><br>
+
+                        <!--Create submit button for user to submit information when done-->
+                        <div class="formSubmitBtnContainer">
+                          <input type="submit" value="Send" class="formSubmitBtn">  
+                        </div>
+                        
+                    </form>      
+
+                </div>
+
+            </div>
+
+            <!--Create pop up form for general business inquires-->
+            <div id="generalBusinessForm" class="formModel">
+                
+                <div class="formModelContent">
+
+                    <!--Create close button for page-->
+                    <div class="closeBtnContainer">
+                      <span class="closeBtn">&times;</span>  
+                    </div>
+                    
+                    <!--Insert title for form-->
+                    <h6>General Business Inquires</h6>
+
+                    <!--Insert statement under title for user-->
+                    <p class="form-statements">Input information here to get in contact with one of our representatives.</p>
+
+                    <!--Create form inputs for user to submit claim-->
+                    <form name="inquiryForm" method="post" action="https://professorcooke.org/forms/processform.php">
+
+                        <!--Create input fields for user fName, lName, user email, phone Number, subject, main message, inquiry type radio buttons-->
+
+                        <!--Prompt user for first and last name-->
+                        <label for="businessFirstName">First Name:</label> <input type="text" name="businessFirstName" id="businessFirstName" required><br>
+                        <label for="businessLastName">Last Name:</label> <input type="text" name="businessLastName" id="businessLastName" required><br>
+
+                        <!--Prompt user for email-->
+                        <label for="businessEmail">Business Email:</label> <input type="email" name="businessEmail" id="businessEmail" required><br>
+
+                        <!--Prompt user for phone number-->
+                        <label for="BusinessPhone#">Phone Number:</label> <input type="tel" name="BusinessPhone#" id="BusinessPhone#" placeholder="(xxx) xxx - xxxx" required><br>
+
+                        <!--Prompt user for subject line of text for message inquiry-->
+                        <label for="messageSubjectLineBusiness">Subject:</label> <input type="text" name="messageSubjectLineBusiness" id="messageSubjectLineBusiness" required><br>
+
+                        <!--Prompt user for main message of form when displayed-->
+                        <label for="mainMessageBusiness" style="text-align: left; padding: 5px;">Message:</label> <textarea name="mainMessageBusiness" id="mainMessageBusiness" cols="40" rows="5" placeholder="Enter message here...." required></textarea><br>
+
+                        <!--Create submit button for user to submit information when done-->
+                        <div class="formSubmitBtnContainer">
+                          <input type="submit" value="Send" class="formSubmitBtn">  
+                        </div>
+                        
+                    </form>      
+
+                </div>
+
+            </div>
+
             <!--Create redirect arrow that allows user to go back to top of screen-->
             <div id="scroll-to-top">&#8593;</div>
         </main>

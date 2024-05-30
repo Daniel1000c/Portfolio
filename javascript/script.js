@@ -66,30 +66,54 @@ for (i = 0; i < coll.length; i++){
 document.addEventListener("DOMContentLoaded",function(){
     
     // get the model
-    var model = document.getElementById("generalCustomerForm");
+    var models =  {
+        generalCustomerForm: document.getElementById("generalCustomerForm"),
+        businessPartnersForm: document.getElementById("businessPartnersForm"),
+        generalBusinessForm: document.getElementById("generalBusinessForm")
+    };
 
     // get the buttons that opens the model
-    var btns = document.querySelectorAll(".inquiry-btn-format");
+    var btns = {
+        generalCustomer: document.getElementById("generalCustomerBtn"),
+        businessPartners: document.getElementById("businessPartnersBtn"),
+        generalBusiness: document.getElementById("generalBusinessBtn")
+    };
 
     // get the span element that closes the model
-    var span = document.getElementsByClassName("closeBtn")[0];
+    var spans = document.getElementsByClassName("closeBtn");
 
     // when user clicks the button, open the model
-    btns.forEach(function(btn){
-        btn.onclick = function(){
-            model.style.display = "block";
-        }
-    });
+    function openModel(model){
+        model.style.display = "block";
+    }
 
     // when the user clicks on the span, close the model
-    span.onclick = function(){
-        model.style.display = "none";
-    }
+   function closeModel(model){
+    model.style.display = "none";
+   }
 
-    // when the user clicks anywhere outside of the model, close it 
-    window.onclick = function(event){
-        if (event.target == model){
-            model.style.display = "none";
-        }
+   // attach event listeners to buttons
+   btns.generalCustomer.onclick = function(){
+    openModel(models.generalCustomerForm);
+   };
+   btns.businessPartners.onclick = function(){
+    openModel(models.businessPartnersForm);
+   };
+   btns.generalBusiness.onclick = function(){
+    openModel(models.generalBusinessForm);
+   };
+
+   // attach event listeners to close elements
+   for (var i = 0; i < spans.length; i++){
+    spans[i].onclick = function(){
+        closeModel(this.closest(".formModel"));
+    };
+   }
+
+   // close model when clicking outside of it
+   window.onclick = function(event){
+    if(event.target.classList.contains("formModel")){
+        closeModel(event.target);
     }
+   }
 });
