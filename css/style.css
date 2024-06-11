@@ -504,3 +504,10 @@ input{
     color: blue;
 }
 
+/*Section D - manga.html*/
+.categoryFilterOptions label{
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 5px;
+}

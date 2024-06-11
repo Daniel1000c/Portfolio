@@ -42,8 +42,89 @@
             <!--Create aside filter for user to filter through manga book products-->
             <aside class="sideBar-filter">
 
-            <!--Create filter categories for user when looking up manga-->
+                <!--Create availability filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for availability section -->
+                    <button class="btnMenu-Collapsibile">Availability</button>
 
+                    <!--Create radio buttons for to check if manga is in stock or not-->
+                    <div class="categoryFilterOptions" id="availabilityFilter">
+                        
+                        <label>
+                            <input type="radio" name="bookAvailability" value="In-Stock"> In-Stock
+                        </label>
+                        <label>
+                            <input type="radio" name="bookAvailability" value="Pre-Orders"> Pre-Orders
+                        </label>
+                    
+                    </div>
+
+                </div>
+
+                <!--Create series filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for series section -->
+                    <button class="btnMenu-Collapsibile">Series</button>
+
+                    <!--Create radio buttons for user to check what series they want manga from-->
+                    <div class="categoryFilterOptions" id="seriesFilter">
+
+                        <label>
+                            <input type="radio" name="seriesName" value="Non Non Biyori"> Non Non Biyori
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Manyuu Scrool"> Manyuu Scroll
+                        </label>
+                    
+                    </div>
+
+                </div>
+
+                <!--Create Product Type filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for series section -->
+                    <button class="btnMenu-Collapsibile">Product</button>
+
+                    <!--Create radio buttons for user to check what type of product they want to read-->
+                    <div class="categoryFilterOptions" id="productTypeFilter">
+
+                        <label>
+                            <input type="radio" name="productType" value="Art Books"> Art Books
+                        </label>
+                        <label>
+                            <input type="radio" name="productType" value="Ecchi"> Ecchi
+                        </label>
+                    
+                    </div>
+
+                </div>
+
+                <!--Create Publisher Type filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for publisher section -->
+                    <button class="btnMenu-Collapsibile">Publisher</button>
+
+                    <!--Create radio buttons for user to check what publisher they want to read from.-->
+                    <div class="categoryFilterOptions" id="publisherFilter">
+
+                        <label>
+                            <input type="radio" name="publisher" value="Kodansha Comics"> Kodansha Comics
+                        </label>
+                        <label>
+                            <input type="radio" name="publisher" value="Yen Press"> Yen Press
+                        </label>
+                    
+                    </div>
+
+                </div>
+
+                <!--Create two buttons at the bottom of search filter sections so that user can have either apply or cancel changes-->
+                <button>APPLY</button>
+                <button>CANCEL</button>
 
             </aside>
             
