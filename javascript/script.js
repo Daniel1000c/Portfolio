@@ -117,3 +117,20 @@ document.addEventListener("DOMContentLoaded",function(){
     }
    }
 });
+
+//Create event listener for sidebar filter
+document.addEventListener('DOMContentLoaded',function(){
+    const collapsible = document.querySelectorAll('.btnMenu-Collapsible');
+
+    collapsible.forEach((collapsible) => {
+        collapsible.addEventListener('click',function(){
+            this.classList.toggle('active');
+            const content = this.nextElementSibling;
+            if (content.style.display == "block"){
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    });
+});// fix issue where boxes are not showing options when clicked

@@ -512,3 +512,42 @@ input{
     margin-top: 5px;
     white-space: nowrap;
 }
+.shoppingContainer{
+    display: flex;
+    width: 100%;
+}
+.sideBar-filter{
+   width: 40%;
+   border: 3px solid black;
+   box-shadow: 2px 0 5px rgba(0,0,0,0.1); 
+}
+/*.sidebarCategory{
+    margin-bottom: 20px;
+}*/
+.categoryFilterOptions{
+    display: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 2px solid black;
+}
+.btnMenu-Collapsible{
+    background-color: lightgrey;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline:none;
+    font-size: 16px;
+}
+.btnMenu-Collapsible:after{
+    content: '\002B';
+    color: #777;
+    float:right;
+    margin-left: 5px;
+}
+.btnMenu-Collapsible.active:after{
+    content: "\2212";
+}
+
