@@ -36,101 +36,99 @@ window.addEventListener("scroll",function() {
     }
 });
 
-// add a click event listener to the arrow
-arrow.addEventListener("click",function(){
-    // scroll to the top of the page smoothly
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
-// Create event listener when user clicks on drop down toggle
-var coll = document.getElementsByClassName("dropDown-toggle");
-
-var i;
-
-for (i = 0; i < coll.length; i++){
-    coll[i].addEventListener("click",function(){
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else{
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
-}
-
-// Create event listener when user clicks the separate contact us buttons to show a form for user to fill in
-document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded", function() {
+    console.log('DOM fully loaded and parsed');
     
-    // get the model
-    var models =  {
-        generalCustomerForm: document.getElementById("generalCustomerForm"),
-        businessPartnersForm: document.getElementById("businessPartnersForm"),
-        generalBusinessForm: document.getElementById("generalBusinessForm")
-    };
-
-    // get the buttons that opens the model
-    var btns = {
-        generalCustomer: document.getElementById("generalCustomerBtn"),
-        businessPartners: document.getElementById("businessPartnersBtn"),
-        generalBusiness: document.getElementById("generalBusinessBtn")
-    };
-
-    // get the span element that closes the model
-    var spans = document.getElementsByClassName("closeBtn");
-
-    // when user clicks the button, open the model
-    function openModel(model){
-        model.style.display = "block";
+    // Arrow scroll to top functionality
+    const arrow = document.querySelector(".your-arrow-selector"); // Replace with your actual arrow selector
+    if (arrow) {
+        arrow.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     }
 
-    // when the user clicks on the span, close the model
-   function closeModel(model){
-    model.style.display = "none";
-   }
-
-   // attach event listeners to buttons
-   btns.generalCustomer.onclick = function(){
-    openModel(models.generalCustomerForm);
-   };
-   btns.businessPartners.onclick = function(){
-    openModel(models.businessPartnersForm);
-   };
-   btns.generalBusiness.onclick = function(){
-    openModel(models.generalBusinessForm);
-   };
-
-   // attach event listeners to close elements
-   for (var i = 0; i < spans.length; i++){
-    spans[i].onclick = function(){
-        closeModel(this.closest(".formModel"));
-    };
-   }
-
-   // close model when clicking outside of it
-   window.onclick = function(event){
-    if(event.target.classList.contains("formModel")){
-        closeModel(event.target);
+    // Drop-down toggle functionality
+    const dropDownToggles = document.getElementsByClassName("dropDown-toggle");
+    for (let i = 0; i < dropDownToggles.length; i++) {
+        dropDownToggles[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
     }
-   }
-});
 
-//Create event listener for sidebar filter
-document.addEventListener('DOMContentLoaded',function(){
+    // Collapsible menu functionality
     const collapsibleButtons = document.querySelectorAll('.btnMenu-Collapsible');
-
-    collapsibleButtons.forEach(button=> {
-        button.addEventListener('click',function(){
+    collapsibleButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            console.log('Button clicked:', this);
             this.classList.toggle('active');
             const content = this.nextElementSibling;
-            if(content.style.display ==="block"){
+            if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
                 content.style.display = "block";
             }
         });
     });
+
+    // Modal form functionality
+    const models = {
+        generalCustomerForm: document.getElementById("generalCustomerForm"),
+        businessPartnersForm: document.getElementById("businessPartnersForm"),
+        generalBusinessForm: document.getElementById("generalBusinessForm")
+    };
+
+    const btns = {
+        generalCustomer: document.getElementById("generalCustomerBtn"),
+        businessPartners: document.getElementById("businessPartnersBtn"),
+        generalBusiness: document.getElementById("generalBusinessBtn")
+    };
+
+    const spans = document.getElementsByClassName("closeBtn");
+
+    function openModel(model) {
+        model.style.display = "block";
+    }
+
+    function closeModel(model) {
+        model.style.display = "none";
+    }
+
+    if (btns.generalCustomer) {
+        btns.generalCustomer.onclick = function() {
+            openModel(models.generalCustomerForm);
+        };
+    }
+
+    if (btns.businessPartners) {
+        btns.businessPartners.onclick = function() {
+            openModel(models.businessPartnersForm);
+        };
+    }
+
+    if (btns.generalBusiness) {
+        btns.generalBusiness.onclick = function() {
+            openModel(models.generalBusinessForm);
+        };
+    }
+
+    for (let i = 0; i < spans.length; i++) {
+        spans[i].onclick = function() {
+            closeModel(this.closest(".formModel"));
+        };
+    }
+
+    window.onclick = function(event) {
+        if (event.target.classList.contains("formModel")) {
+            closeModel(event.target);
+        }
+    }
 });
