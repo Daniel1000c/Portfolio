@@ -550,4 +550,20 @@ input{
 .btnMenu-Collapsible.active:after{
     content: "\2212";
 }
-
+.sideBtnContainer{
+    text-align: center;
+}
+.sideMenuBtn{
+    padding: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sideMenuBtn:hover{
+    background-color: lightgrey;
+    color: black;
+    font-weight: bolder;
+}
+.sideMenuBtn:active{
+    background-color: darkslategray;
+    color: white;
+}
