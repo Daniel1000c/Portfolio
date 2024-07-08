@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Anime Land</title>
+        <link rel="stylesheet" href="simpleCss/simpleCss.css">
+    </head>
+    <body>
+        <header>
+            <!--Insert basic logo to image so that it can look more prettier-->
+            <h1>Anime Land</h1>
+        </header>
+        <main>
+            <!--Create container for username and user password-->
+            <div class="loginContainer">
+                <h2>Log In</h2>
+
+                <!--Create form for user to input username and password-->
+                <form name="userLoginForm" method="post" action="https://professorcooke.org/forms/processform.php">
+
+                    <!-- Prompt user for username and password-->
+                     <label for="userName">Username:</label> <input type="text" name="userName" id="userName"  placeholder="Username...." required class="inputFormat"><br>
+                     <label for="userPassword">Password:</label> <input type="text" name="userPassword" id="userPassword" placeholder="Password...." required class="inputFormat"><br>
+
+                    <!--Create submit button for user to submit user and password-->
+                    <input type="submit" value="Log In" class="formSubmitBtn">
+                </form>
+            </div>
+        </main>
+        <footer>
+            &copy;Copyright 2024 Anime Land
+        </footer>
+    </body>
+</html>

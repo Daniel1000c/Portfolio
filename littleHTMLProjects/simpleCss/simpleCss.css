@@ -1,0 +1,73 @@
+/*General Formatting*/
+*{
+    margin: 0; /*Set all margins to zero*/
+    padding: 0; /*Set all paddings to zero*/
+    box-sizing: border-box;
+}
+
+
+header{
+    background: linear-gradient(to bottom, #000000, #1a1a1a); /*Create a black linear gradient background for header*/
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header:hover{
+    transition: color 0.3s ease-in;/*Create ease in effect user is hovering over title*/
+    color: red;
+}
+footer{
+    text-align: center; /*Align text to center*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url(../simpleImage/tengyart-lKUxx5f53Os-unsplash.jpg);
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.loginContainer{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 25%;
+    top: 50%;
+    left: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+}
+label,input{
+    margin: 10px;
+    font-weight: bolder;
+    border: none;
+    background-color: transparent;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.inputFormat{
+    border-bottom: 1px solid black;
+}
+.formSubmitBtn{
+    margin: 20px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+.formSubmitBtn:hover{
+    color: lightblue;
+    transition: color 0.3s ease-in;
+}

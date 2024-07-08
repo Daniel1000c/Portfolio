@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-07-08T16:48:41.786Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="pyLh0StnVR8gSFG5TzDT" version="24.6.4" type="onedrive">
+  <diagram name="Page-1" id="CEVhAQTZUV8jXg_IMRYL">
+    <mxGraphModel dx="2049" dy="1066" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sex7_riTzok9jGZcgYgr-1" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="990" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-2" value="Page 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;whiteSpace=wrap;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="60" y="12" width="110" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-3" value="https://www.draw.io" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="130" y="60" width="250" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-4" value="For background have an anime backdrop to give the login in page some ilfe" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="810" y="110" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-5" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="270" y="340" width="532.5" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-6" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="408.38" y="450" width="255.75" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-7" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="408.38" y="520" width="255.75" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-8" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="461.25" y="550" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sex7_riTzok9jGZcgYgr-9" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="sex7_riTzok9jGZcgYgr-1">
+          <mxGeometry x="476.25" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
