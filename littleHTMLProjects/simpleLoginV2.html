@@ -13,6 +13,18 @@
             <!--Create container for username and user password-->
             <div class="LoginContainer">
                 <h2>Log In</h2>
+                <!--Create form for user to input username and password-->
+                <form name="userLoginForm" method="post" action="https://professorcooke.org/forms/processform.php">
+                    <!-- Prompt user for username and password-->
+                    <input type="text" name="simpleUserName" id="simpleUserName"  placeholder="Username...." required class="simpleCredInput"><br>
+                    <input type="text" name="simplePassWord" id="simplePassWord" placeholder="Password...." required class="simpleCredInput"><br>
+
+                    <!--Create submit button for user to submit user and password-->
+                    <input type="submit" value="Log In" class="btnStyle">
+
+                    <!--Create link for user to register if they don't have a account-->
+                    <a href="simpleRegister.html" class="registerFormat">Create Account</a>
+                </form>
             </div>
         </main>
         <footer>

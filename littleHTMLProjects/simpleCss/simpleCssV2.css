@@ -25,7 +25,6 @@ footer{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 /*Format and add background to body*/
 body{
     background-image: url(../simpleImage/animeMountain.jpg);
@@ -36,11 +35,14 @@ body{
 }
 
 /*Format login container*/
-.loginContainer{
+/*Create transition for login container that floats down when page loads up*/
+.LoginContainer{
+    opacity: 0;
+    animation: floatDown 1s ease-out forwards;
     position: absolute;
-    transform: translate(-50%, -50%);
-    width: 20%;
-    height: 25%;
+    transform: translate(-50%, -50%) translateY(-100px);
+    width: 35%;
+    height: 35%;
     top: 50%;
     left: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,4 +51,57 @@ body{
     border-radius: 15px;
     text-align: center;
     z-index: 1;
+}
+
+@keyframes floatDown{
+    0%{
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%) translateY(0);
+    }
+}
+
+/*Format input for login container*/
+.simpleCredInput{
+    outline: none;
+    font-size: larger;
+    font-weight: bolder;
+    border: none; /*Remove border*/
+    background: none; /*Remove background*/
+    border-bottom: 1px solid black; /*Add border bottom*/
+    width: 50%; /*set lines to same width*/
+    margin: 25px 0 25px 0; /*Add top and bottom margin*/
+}
+
+/*Format button for login container*/
+.btnStyle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    padding: 15px;
+    width: 25%;
+    font-size: larger;
+    border-radius: 10px;
+    background-color: #3F51B5;
+}
+
+.btnStyle:hover{
+    transition: color 0.3s ease-in;
+    background-color: darkblue;
+    color: white;
+    font-weight: bolder;
+}
+
+.registerFormat{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.registerFormat:hover{
+    text-decoration: underline;
+    font-weight: bolder;
 }
