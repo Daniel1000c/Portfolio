@@ -8,9 +8,13 @@
 
 /*Format header for general use*/
 header{
+    background-color: #050595;
+    color: white;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
+    animation: popDown 1s ease-out forwards;
+    opacity: 0;
 }
 
 /*Format footer to be center and at bottom of screen*/
@@ -20,6 +24,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 10px;
     font-size: larger;
     font-weight: bolder;
     color: white;
@@ -53,6 +58,17 @@ body{
     z-index: 1;
 }
 
+@keyframes popDown{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
 @keyframes floatDown{
     0%{
         opacity: 0;
@@ -105,4 +121,37 @@ body{
     text-decoration: underline;
     font-weight: bolder;
 }
-
+.footerContainer{
+    border-bottom: 3px solid black;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.footerList li{
+    display: inline-block;
+    padding: 10px;
+}
+.footerList li a{
+ text-decoration: none;
+ font-size: larger;
+}
+.footerList li a:hover{
+    color: darkmagenta;
+    transition: color 0.3s ease-in;
+}
+.registerContainer{
+    opacity: 0;
+    animation: floatDown 1s ease-out forwards;
+    position: absolute;
+    transform: translate(-50%, -50%) translateY(-100px);
+    width: 35%;
+    height: 35%;
+    top: 50%;
+    left: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1;
+}
