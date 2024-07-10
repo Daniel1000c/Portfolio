@@ -4,7 +4,27 @@
         <meta charset="utf-8">
         <title>Anime Land</title>
         <link rel="stylesheet" href="simpleCss/simpleCssV2.css">
+        <script src="simpleJava/simpleJava.js"></script> <!--Link external style sheet-->
     </head>
+    <!--Create internal style sheet for page-->
+    <style>
+        .registerContainer{
+            height: 50%;
+        }
+        .registerContainer form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .registerContainer form input{
+            margin-bottom: 10px;
+            width: 250px;
+        }
+        .registerContainer form .btnStyle{
+            width: 100%;
+            max-width: 250px;
+        }
+    </style>
     <body>
         <header>
             <h1>Anime Land</h1>
@@ -23,6 +43,8 @@
                     <!--Create submit button for user to submit user and password-->
                     <input type="submit" value="Create Acccont" class="btnStyle">
 
+                    <!--lead user back to log in screen if they already have an account-->
+                    <a href="simpleLoginV2.html" class="registerFormat">Already have an account? Log In</a>
                 </form>
             </div>
         </main>
