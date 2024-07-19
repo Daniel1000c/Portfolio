@@ -9,25 +9,49 @@
 body{
     background-color: #007BFF;
 }
+/*Format footer to be center of page*/
+footer{
+    text-align: center;
+}
 
 /*Format navigation bar to fit on one line*/
 nav{
     text-align: right; /*Text align nav bar to the right*/
     animation: fadeDown 0.5s;/*Crate fade down animation for nav container*/
+    margin-right: 65px;
 }
 nav li{
     list-style-type: none;
     display: inline-block;
     width: 100px;
     padding: 10px;
-    font-weight: bolder;
     font-size: larger;
     text-align: center;
 }
 nav li a{
     text-decoration: none; /*Get rid of underlines on links*/
     color: white;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.5s ease, font-size 0.5s ease, font-weight 0.5s ease; /*Create transition effect for links when hovering over them*/
+
+}
+/*Create hover effect on nav links*/
+nav li a:hover{
+    font-weight: bolder; /*Create bold effect when hovering*/
+    font-size: 1.2em; /*Make font larger when hovering*/
+    color: aqua; /*Change color when hovering*/
+}
+
+/*Create and format container for creator pic and links*/
+.creatorContainer{
+    overflow: hidden;
+}
+/*format creator pic to fit better on page and float it to the right*/
+.creatorContainer img{
+    float: right;
+    margin-right: 10px;
+    max-width: 400px;
+    padding: 10px;
 }
 
 /*Navigation bar fadeDown animation*/
