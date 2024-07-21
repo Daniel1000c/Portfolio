@@ -33,7 +33,6 @@ nav li a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     transition: color 0.5s ease, font-size 0.5s ease, font-weight 0.5s ease; /*Create transition effect for links when hovering over them*/
-
 }
 /*Create hover effect on nav links*/
 nav li a:hover{
@@ -44,7 +43,10 @@ nav li a:hover{
 
 /*Create and format container for creator pic and links*/
 .creatorContainer{
-    overflow: hidden;
+   overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*format creator pic to fit better on page and float it to the right*/
 .creatorContainer img{
@@ -52,6 +54,31 @@ nav li a:hover{
     margin-right: 10px;
     max-width: 400px;
     padding: 10px;
+}
+
+/*Format button group container to have it sit next to creator picture*/
+.buttonGroup{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+/*Format shape of button to make it more appealing to user*/
+.btnFormat{
+    padding: 15px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 15px;
+    background-color: lightcyan;
+}
+/*Format button links to have no style*/
+.btnFormat a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Create button format when user hovers over dummy links*/
+.btnFormat:hover{
+    background-color: darkcyan;
+    font-weight: bolder;
 }
 
 /*Navigation bar fadeDown animation*/
