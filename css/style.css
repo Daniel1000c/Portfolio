@@ -292,6 +292,7 @@ footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: darkorange;
     font-weight: bolder;
+    border: none;
 }
 
 /*Section C - contact.html*/
@@ -514,8 +515,12 @@ input{
     white-space: nowrap;
 }
 .shoppingContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 10px;
+    
     width: 100%;
+    padding: 10px;
 }
 .sideBar-filter{
    width: 100%;
@@ -586,4 +591,20 @@ input{
    display: flex;
    flex-direction: column;
    position: relative; 
+}
+/*Create separate container for centering grid*/
+.gridCenter{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/*Create container that puts all shopping items in a grid format*/
+.gridBtnContainer{
+    display: grid; /*Display shop items in grid table format*/
+    grid-template-columns: repeat(3,1fr); /*Create 3 columns of equal size*/
+    gap: 10px; /*Give space between grid items*/
+    max-width: 100%;
+    width: 100%;
 }
