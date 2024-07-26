@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+
+h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+h3{
+    font-weight: light;
+    text-decoration: underline;
+}
 /*Create a smooth background for body*/
 body{
     background-color: #007BFF;
@@ -81,6 +91,35 @@ nav li a:hover{
     font-weight: bolder;
 }
 
+/*Create container to contain pricing formats and format it as a grid*/
+.pricingGridContainer{
+    display: grid;/*Display container as a grid*/
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;/*Adjust space between grid items*/
+}
+.pricingFormat{
+    text-align: center;/*Align items center*/
+    margin:20px ;
+    background-color: #251351;
+    border-radius: 10px;
+    color: white;
+    padding: 25px;
+}
+.pricingListFormat{
+    margin: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.priceBtnFormat{
+    background-color: lightgray;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.priceBtnFormat:hover{
+    background-color: darkgray;
+}
 /*Navigation bar fadeDown animation*/
 @keyframes fadeDown{
     0%{
