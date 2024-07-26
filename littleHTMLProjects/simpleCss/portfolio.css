@@ -120,6 +120,7 @@ nav li a:hover{
 .priceBtnFormat:hover{
     background-color: darkgray;
 }
+
 /*Navigation bar fadeDown animation*/
 @keyframes fadeDown{
     0%{
