@@ -10,6 +10,7 @@ h2{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
+    margin: 5px 0 5px 0;
 }
 h3{
     font-weight: light;
@@ -96,6 +97,9 @@ nav li a:hover{
     display: grid;/*Display container as a grid*/
     grid-template-columns: repeat(3,1fr);
     gap: 20px;/*Adjust space between grid items*/
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
 }
 .pricingFormat{
     text-align: center;/*Align items center*/
@@ -121,6 +125,24 @@ nav li a:hover{
     background-color: darkgray;
 }
 
+/*Create contact container for user to contact creator*/
+.contactContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*Adjust column ratio as needed*/
+}
+.businessGeoLocation, .contactForm{
+    padding: 20px;
+}
+.businessGeoLocation{
+    background-color: #f0f0f0;;
+}
+.contactForm{
+    background-color: #ffffff;
+}
+.address{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
 /*Navigation bar fadeDown animation*/
 @keyframes fadeDown{
     0%{
