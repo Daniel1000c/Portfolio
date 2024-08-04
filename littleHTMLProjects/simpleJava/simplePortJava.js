@@ -1,17 +1,26 @@
-// Use geolocation api for user to get location
-if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
-} else {
-    console.error("Geolocation is not supported by this browser.");
+// Create movement for carousel slider
+let currentIndex = 0;
+const items = document.querySelectorAll('.sliderItem');
+const totalItems = items.length;
+
+function showSlide(index){
+    const carouselInner = document.querySelector('.sliderContent');
+    if(index >= totalItems){
+        currentIndex = 0;
+    } else if(index < 0){
+        currentIndex = totalItems - 1;
+    } else {
+        currentIndex = index;
+    }
+    const offset = -currentIndex * 100
+    carouselInner.style.transform = `translateX(${offset}%)`;
 }
 
-function successCallback(position){
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-    reverseGeoCode(latitude,longitude);
+function nextSlide(){
+    showSlide(currentIndex + 1);
 }
 
-function errorCallback(error){
-    console.error("Error occurred while retrieving location: ", error);
+function prevSlide(){
+    showSlide(currentIndex - 1);
 }
 

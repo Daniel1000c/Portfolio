@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Portfolio Page</title>
         <link rel="stylesheet" href="simpleCss/portfolio.css">
-        <script src="simpleJava/simplePortJava.js"></script> <!--Link to external js file-->
     </head>
     <body>
         <header>
@@ -31,13 +30,69 @@
                     </p>
 
                     <!--Create two buttons for social media links-->
-                    <button class="btnFormat"><a href="#">Github</a></button>
-                    <button class="btnFormat"><a href="#">Twitter</a></button>    
+                   <a href="#" class="btnFormat">Github</a>
+                   <a href="#" class="btnFormat">Twitter</a>
                 </div>
 
                 <!--insert photo of creator and align it to the left of container-->
                 <img src="simpleImage/creatorPic.png" alt="Creator of Portfolio">
             </div>
+
+            <!--Create services section for user-->
+            <section>
+                <h2>Services</h2>
+
+                <!--Create three containers to show the type of services that creator provides-->
+                <div class="gridContainer">
+                    <!--Create a slide carousel that allows the user to click next on new item-->
+                    <div class="itemSlider">
+                        <!--Create button to select PREVIOUS item-->
+                        <button class="prev" onclick="prevSlide()">&lt;</button>
+
+                        <!--Create container for carousel items-->
+                        <div class="sliderContent">
+                            <div class="sliderItem">
+                                <!--Create h3 title for each item-->
+                                <h3>Web Development</h3>
+
+                                <!--Give brief summary of service-->
+                                <p>Responsive Website design, E-commerce Platform</p>
+                            </div>
+                            <div class="sliderItem">
+                                <!--Create h3 title for each item-->
+                                <h3>Mobile App Development</h3>
+
+                                <!--Give brief summary of service-->
+                                <p>Tracker App, Social Media App, E-commerce App</p>
+                            </div>
+                            <div class="sliderItem">
+                                <!--Create h3 title for each item-->
+                                <h3>UI/UX Designs</h3>
+
+                                <!--Give brief summary of service-->
+                                <p>User Interface Design, User Experience Research, Automated Testing Tools</p>
+                            </div>
+                            <div class="sliderItem">
+                                <!--Create h3 title for each item-->
+                                <h3>Graphic Design</h3>
+
+                                <!--Give brief summary of service-->
+                                <p>Logo Design, Banner Design, Poster Design</p>
+                            </div>
+                            <div class="sliderItem">
+                                <!--Create h3 title for each item-->
+                                <h3>Software Development</h3>
+
+                                <!--Give brief summary of service-->
+                                <p>Inventory Management System, CRM System, Automated Testing Tools</p>
+                            </div>
+                        </div>
+
+                        <!--Create button to select NEXT item-->
+                        <button class="next" onclick="nextSlide()">&gt;</button>
+                    </div>
+                </div>
+            </section>
 
             <!--Create pricing section-->
             <section>
@@ -45,7 +100,7 @@
                 <h2>Pricing</h2>
 
                 <!--Create container to store price grid table-->
-                <div class="pricingGridContainer">
+                <div class="GridContainer">
 
                     <!--Create three pricing containers -->
                     <div class="pricingFormat">
@@ -89,24 +144,12 @@
                 </div>
             </section>
 
-            <!--Create section contact creator section for user-->
-            <div class="contactContainer">
-                <!--Create gps location on left side of section-->
-                <div class="businessGeoLocation">
-
-                </div>
-                
-                <!--Create contact form on the right for user to contact creator-->
-                <div class="contactForm">
-                    <!--Create form for user to contact creator-->
-                    <form action="clientForm" method="post" action ="https://professorcooke.org/forms/processform.php">
-                        
-                    </form>
-                </div>
-            </div>
         </main>
         <footer>
             &copy;Copyright 2024 Broward College
         </footer>
+
+        <!--link to external js file-->
+        <script src="simpleJava/simplePortJava.js"></script>
     </body>
 </html>

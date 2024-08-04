@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-
+a{
+    text-decoration: none;
+}
 h2{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,12 +15,16 @@ h2{
     margin: 5px 0 5px 0;
 }
 h3{
-    font-weight: light;
+    font-weight: lighter;
     text-decoration: underline;
 }
 /*Create a smooth background for body*/
 body{
     background-color: #007BFF;
+}
+section{
+   padding: 25px;
+    text-align: center;
 }
 /*Format footer to be center of page*/
 footer{
@@ -93,10 +99,10 @@ nav li a:hover{
 }
 
 /*Create container to contain pricing formats and format it as a grid*/
-.pricingGridContainer{
-    display: grid;/*Display container as a grid*/
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;/*Adjust space between grid items*/
+.GridContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.6);
     border-top: 1px dotted black;
     border-bottom: 1px dotted black;
@@ -125,23 +131,43 @@ nav li a:hover{
     background-color: darkgray;
 }
 
-/*Create contact container for user to contact creator*/
-.contactContainer{
-    display: grid;
-    grid-template-columns: 1fr 2fr; /*Adjust column ratio as needed*/
+/*Create formatting for slider tool*/
+.itemSlider{
+    position: relative;
+    width: 88%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto; /*Center the slider*/
 }
-.businessGeoLocation, .contactForm{
+.sliderContent{
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+}
+.sliderItem{
+    min-width: 100%;
+    box-sizing: border-box;
+    background: #ddd;
     padding: 20px;
+    text-align: center;
 }
-.businessGeoLocation{
-    background-color: #f0f0f0;;
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /*Ensures arrows are at the top of slider and wont*/
 }
-.contactForm{
-    background-color: #ffffff;
+.prev{
+    left: 10px;
 }
-.address{
-    margin-bottom: 20px;
-    font-size: 16px;
+.next{
+    right: 10px;
 }
 /*Navigation bar fadeDown animation*/
 @keyframes fadeDown{
