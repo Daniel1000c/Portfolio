@@ -143,4 +143,36 @@ document.addEventListener("DOMContentLoaded", function() {
             closeModel(event.target);
         }
     }
+
+    // New image slider functionality
+
+    // Initialize slider
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+    showSlides(slideIndex);
+
+    function plusSlide(n){
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n){
+        if (n >= slides.length){
+            slideIndex = 0;
+        }
+        if (n < 0){
+            slideIndex = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++){
+            slides[i].style.transform = 'translateX(${-slideIndex * 100}%)';
+        }
+    }
+
+    // Attach event listener for the slider navigation arrows 
+    document. querySelector('.prev').addEventListener('click',function(){
+        plusSlide(-1);
+    });
+
+    document.querySelector('.next').addEventListener('click',function(){
+        plusSlide(1);
+    });
 });
