@@ -148,31 +148,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Initialize slider
     let slideIndex = 0;
-    const slides = document.getElementsByClassName("slide");
-    showSlides(slideIndex);
-
-    function plusSlide(n){
-        showSlides(slideIndex += n);
+    
+    function plusSlide(n) {
+        const slides = document.getElementsByClassName("slide");
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        showSlides();
     }
-
-    function showSlides(n){
-        if (n >= slides.length){
-            slideIndex = 0;
-        }
-        if (n < 0){
-            slideIndex = slides.length - 1;
-        }
-        for (let i = 0; i < slides.length; i++){
-            slides[i].style.transform = 'translateX(${-slideIndex * 100}%)';
-        }
+    
+    function showSlides() {
+        const slides = document.getElementsByClassName("slide");
+        const slideWidth = slides[0].clientWidth; // Get the width of one slide
+        document.querySelector('.imgSlider').style.transform = `translateX(${-slideIndex * slideWidth}px)`;
     }
-
-    // Attach event listener for the slider navigation arrows 
-    document. querySelector('.prev').addEventListener('click',function(){
+    
+    document.querySelector('.prev').addEventListener('click', function() {
         plusSlide(-1);
     });
-
-    document.querySelector('.next').addEventListener('click',function(){
+    
+    document.querySelector('.next').addEventListener('click', function() {
         plusSlide(1);
     });
 });
+
