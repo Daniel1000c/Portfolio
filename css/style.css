@@ -114,6 +114,30 @@ footer{
     z-index: 10;
 }
 
+/*Create img slider button format*/
+.sliderBtnFormat{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    text-decoration: none;
+    transition: color 0.5s ease-in, background-color 0.5s ease-in;
+    padding: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: 4px 4px 10px #A77B03, -4px -4px 10px #FFD904; /* Adds the 3D shadow effect */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #FCBA04 ;
+    z-index: 10;
+    color: black;
+}
+.sliderBtnFormat:hover{
+    background-color: #FDD757;
+    color: hsl(249, 98%, 67%);
+}
+
 /*redirect arrow formatting*/
 #scroll-to-top{
     display: none;
