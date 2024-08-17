@@ -128,7 +128,7 @@ footer{
     font-size: larger;
     font-weight: bolder;
     box-shadow: 4px 4px 10px #A77B03, -4px -4px 10px #FFD904; /* Adds the 3D shadow effect */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #FCBA04 ;
     z-index: 10;
     color: black;
@@ -691,4 +691,23 @@ input{
     gap: 10px; /*Give space between grid items*/
     max-width: 100%;
     width: 100%;
+}
+.product{
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border : 1px solid black;
+    border-radius: 5px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.shoppingImgFormat{
+    width: 150px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.product p{
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
 }
