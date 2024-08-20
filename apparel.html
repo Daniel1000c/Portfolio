@@ -2,19 +2,307 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Anime Apparel</title>
+        <title>Manga/Light Novels</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="favicon/favicon.ico"> <!--Link favicon to have image on web tab.-->
+        <!--Create a embedded style sheet for format heading just for the contact.html page-->
     </head>
     <body>
         <header>
-            <h1>Anime Apparel</h1>
-            <hr>
-        </header>
-        <main>
 
-        </main>
+            <!--Place store logo next to title and make it an image map to about us page.-->
+            <div class="webpage_logo">
+                <img src="images/edited_camel.png" class="logo-format fade-down" alt="Anime Oasis Logo" usemap="#logomap">
+
+                <map name="logomap">
+                    <area shape="circle" coords="52,53,52" href="index.html" alt="Anime Oasis">
+                </map>
+                <h1 class="fade-down">Anime Oasis Apparel</h1>   
+            </div>
+
+            <!--Create navigation bar that is shifted left of page.-->
+            <div class="main-menu-container fade-down">
+                <nav class="main-menu-navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="figures.html">Figures</a></li>
+                        <li><a href="manga.html">Manga/Light Novels</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        <!--Create container for shopping products so that both filter and manga products are next to each other-->
+        <div class="shoppingContainer">
+            <div class="filterBackBtnContainer">
+                <!--Create back button for user to close sidebar filter for manga.html-->
+            <button class="backBtnTop">&#8592;Back</button>
+
+            <!--Create aside filter for user to filter through manga book products-->
+            <aside class="sideBar-filter">
+
+                <!--Create availability filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for availability section -->
+                    <button class="btnMenu-Collapsible">Availability</button>
+
+                    <!--Create radio buttons for to check if manga is in stock or not-->
+                    <div class="categoryFilterOptions" id="availabilityFilter">
+                        
+                        <label>
+                            <input type="radio" name="bookAvailability" value="In-Stock"> In-Stock
+                        </label>
+                        <label>
+                            <input type="radio" name="bookAvailability" value="Pre-Orders"> Pre-Orders
+                        </label>
+                    
+                    </div>
+
+                </div>
+
+                <!--Create series filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for series section -->
+                    <button class="btnMenu-Collapsible">Series</button>
+
+                    <!--Create radio buttons for user to check what series they want manga from-->
+                    <div class="categoryFilterOptions" id="seriesFilter">
+
+                        <label>
+                            <input type="radio" name="seriesName" value="Non Non Biyori"> Non Non Biyori
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Manyuu Scrool"> Manyuu Scroll
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Highschool DxD"> Highschool DxD
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Konosuba"> Konosuba
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="My Dress Up Darling"> My Dress Up Darling
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="KILL LA KILL"> KILL LA KILL
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Golden Boy"> Golden Boy
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="No Game, No Life"> No Game, No Life
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Shin Chan"> Shin Chan
+                        </label>
+                        <label>
+                            <input type="radio" name="seriesName" value="Gushing Over Magical Girls"> Gushing Over Magical Girls
+                        </label>
+
+                    
+                    </div>
+
+                </div>
+
+                <!--Create Product Type filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for series section -->
+                    <button class="btnMenu-Collapsible">Product</button>
+
+                    <!--Create radio buttons for user to check what type of product they want to read-->
+                    <div class="categoryFilterOptions" id="productTypeFilter">
+
+                        <label>
+                            <input type="radio" name="productType" value="Art Books"> Art Books
+                        </label>
+                        <label>
+                            <input type="radio" name="productType" value="Doujinshi"> Doujinshi
+                        </label>
+                        <label>
+                            <input type="radio" name="productType" value="Box Sets"> Box Sets
+                        </label>
+                        <label>
+                            <input type="radio" name="productType" value="Omnibus Editions"> Omnibus Editions
+                        </label>
+                        <label>
+                            <input type="radio" name="productType" value="Light Novels"> Light Novels
+                        </label>
+                        <label>
+                            <input type="radio" name="productType" value="Deluxe Editions"> Deluxe Editions
+                        </label>
+                    
+                    </div>
+
+                </div>
+
+                <!--Create Publisher Type filter category for user-->
+                <div class="sidebarCategory">
+                    
+                    <!--Create button for publisher section -->
+                    <button class="btnMenu-Collapsible">Publisher</button>
+
+                    <!--Create radio buttons for user to check what publisher they want to read from.-->
+                    <div class="categoryFilterOptions" id="publisherFilter">
+
+                        <label>
+                            <input type="radio" name="publisher" value="Kodansha Comics"> Kodansha Comics
+                        </label>
+                        <label>
+                            <input type="radio" name="publisher" value="Yen Press"> Yen Press
+                        </label>
+                        <label>
+                            <input type="radio" name="publisher" value="Seven Seas Entertainment"> Seven Seas Entertainment
+                        </label>                        
+                        <label>
+                            <input type="radio" name="publisher" value="VIZ inc."> VIZ inc.
+                        </label>                        
+                        <label>
+                            <input type="radio" name="publisher" value="NBM Graphic Novels"> NBM Graphic Novels
+                        </label>                        
+                        <label>
+                            <input type="radio" name="publisher" value="Vertical Inc."> Vertical Inc.
+                        </label>                        
+                        <label>
+                            <input type="radio" name="publisher" value="Osiem mackek"> Osiem macek
+                        </label>                        
+                        <label>
+                            <input type="radio" name="publisher" value="Dark Horse Comics"> Dark Horse Comics
+                        </label>                        
+
+                    
+                    </div>
+
+                </div>
+
+                <!--Create two buttons at the bottom of search filter sections so that user can have either apply or cancel changes-->
+                <div class="sideBtnContainer">
+                    <button class="sideMenuBtn">APPLY</button>
+                    <button class="sideMenuBtn">CANCEL</button>   
+                </div>
+                
+
+            </aside>
+            </div>
+            <main>
+                <!--Create six buttons for user to click on if they want to add product to cart-->
+                <div class="gridCenter">
+                    <div class="gridBtnContainer">
+                        <div class="product">
+                            <!--Insert image of series on top of placeholder price-->
+                            <img src="images/azumanga-daioh-manga-complete-edition.jpg" alt="Azumanga" class="shoppingImgFormat">
+
+                            <!--Create placeholder prices for each shopping items-->
+                            <p>$19.99</p>
+                            <button class="btn-style">Add to Cart</button>
+
+                        </div>
+                        
+                        <div class="product">
+                            <!--Insert image of series on top of placeholder price-->
+                            <img src="images/konosubaManga.jpg" alt="Konosuba" class="shoppingImgFormat">
+
+                            <!--Create placeholder prices for each shopping items-->
+                            <p>$7.99</p>
+                            <button class="btn-style">Add to Cart</button> 
+
+                        </div>
+                        
+                        <div class="product">
+                            <!--Insert image of series on top of placeholder price-->
+                            <img src="images/Manyū_Hiken-chō_vol_1.jpg" alt="Manyu Scroll" class="shoppingImgFormat">
+
+                            <!--Create placeholder prices for each shopping items-->
+                            <p>$10.99</p>
+                            <button class="btn-style">Add to Cart</button>  
+
+                        </div>
+                        <div class="product">
+                            <!--Insert image of series on top of placeholder price-->
+                            <img src="images/gushing-over-magical-girls-vol-1-en-manga.jpg" alt="Gushing Over Magical Girls" class="shoppingImgFormat">
+
+                            <!--Create placeholder prices for each shopping items-->
+                            <p>$7.99</p>
+                            <button class="btn-style">Add to Cart</button> 
+
+                        </div>
+                        
+                        <div class="product">
+                            <!--Insert image of series on top of placeholder price-->
+                            <img src="images/My-Dress-Up-Darling-cover.jpg" alt="My Dress Up Darling" class="shoppingImgFormat">
+
+                            <!--Create placeholder prices for each shopping items-->
+                            <p>$10.99</p>
+                            <button class="btn-style">Add to Cart</button>
+
+                        </div>
+                        
+                        <div class="product">
+                            <!--Insert image of series on top of placeholder price-->
+                            <img src="images/KillLaKill.jpg" alt="Kill La Kill" class="shoppingImgFormat">
+
+                            <!--Create placeholder prices for each shopping items-->
+                            <p>$9.99</p>
+                            <button class="btn-style">Add to Cart</button>    
+                        </div>
+                        
+                    </div>    
+                </div>
+                
+                <!--Create redirect arrow that allows user to go back to top of screen-->
+                <div id="scroll-to-top">&#8593;</div>
+            </main>    
+            
+        </div>
+        
         <footer>
-            <hr>
-            &copy;Copyright 2024 Broward College
+
+            <!--Create div container called "column row" to container columns-->
+            <div class="columnRow">
+
+                <!--Create three column sections called customer service, about anime oasis, and helpful links-->
+                <div class="column">
+                    <h3>Customer Service</h3>
+                    <ul class="column-links">
+                        <li><a href="">Track Order</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>About Anime Oasis</h3>
+                    <ul class="column-links">
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="">AdChoices</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="">Do Not Sell My Personal Information</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>helpful Links</h3>
+                    <ul class="column-links">
+                        <li><a href="">Sign In</a></li>
+                        <li><a href="">Become Member</a></li>
+                        <li><a href="">Sales & Promotions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!--Center copyright message-->
+            <div class="copyright-center">
+                &copy;Copyright 2024 Anime Oasis
+            </div>
+
         </footer>
+
+        <script src="javascript/script.js"></script><!--Link to external js file-->
     </body>
 </html>
